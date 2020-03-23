@@ -18,12 +18,11 @@ export class driverRepository {
 	}
 
 	public async getdDriverRandom() {
-		return await getManager()
+		const drivers: Driver[] = await getManager()
 			.getRepository(Driver)
-			.createQueryBuilder()
-			.innerJoin('pedido', 'pedido')
-			.orderBy('RAND()')
-			.limit(1)
-			.getOne();
+			.find({
+				relations: ['pedidos']
+			});
+		return drivers[Math.floor(Math.random() * drivers.length)];
 	}
 }

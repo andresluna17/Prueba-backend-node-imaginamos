@@ -41,7 +41,8 @@ export class PedidoBusinessController {
 		pedido.direccion = cliente!.direcciones[0];
 		const pedidocreado = await this.pedidoRepository.createPedido(pedido);
 		const driver: Driver | undefined = await this.driverRepository.getdDriverRandom();
-		pedidocreado.drivers = [driver!];
+		console.log(driver);
+		driver!.pedidos = [...driver!.pedidos, pedidocreado];
 		this.driverRepository.createDriverRelation(driver!);
 		return pedidocreado;
 	}
