@@ -39,3 +39,9 @@ body:
 "telefono":301921333,
 "email":"jaime@gmail.com"
 }
+
+# arquitectura
+
+utilice una arquitectura de capas combinada con una modular
+donde las capas son model,repository y modules
+la capa de modulos es una arquitectura modular, ya que en esta se encontraran las funcionalidades y la logica de negocio, las funcionalidades se encuentra divididas por modulos facilmente adaptables a la aplicacion, esto hace que la aplicacion sea facil de modifical, escalable y mantenible al pasar del tiempo
