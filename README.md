@@ -44,4 +44,4 @@ body:
 
 utilice una arquitectura de capas combinada con una modular
 donde las capas son model,repository y modules
-la capa de modulos es una arquitectura modular, ya que en esta se encontraran las funcionalidades y la logica de negocio, las funcionalidades se encuentra divididas por modulos facilmente adaptables a la aplicacion, esto hace que la aplicacion sea facil de modifical, escalable y mantenible al pasar del tiempo
+la capa de modules es una arquitectura modular, ya que en esta se encontraran las funcionalidades y la logica de negocio, las funcionalidades se encuentra divididas por modulos facilmente adaptables a la aplicacion, esto hace que la aplicacion sea facil de modificar, escalable y mantenible al pasar del tiempo
